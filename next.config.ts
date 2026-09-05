@@ -4,6 +4,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: "export", // Enables static export
   images: { unoptimized: true },
+  basePath: process.env.PAGES_BASE_PATH,
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   turbopack: {
     rules: {
