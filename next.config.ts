@@ -8,7 +8,6 @@ const nextConfig: NextConfig = {
   basePath,
   assetPrefix: basePath,
   images: { unoptimized: true },
-  basePath: process.env.PAGES_BASE_PATH,
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   turbopack: {
     rules: {
