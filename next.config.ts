@@ -1,8 +1,12 @@
 import createMDX from "@next/mdx";
 import type { NextConfig } from "next";
 
+const basePath = process.env.NODE_ENV === "production" ? "/Zenith-Website" : "";
+
 const nextConfig: NextConfig = {
   output: "export", // Enables static export
+  basePath,
+  assetPrefix: basePath,
   images: { unoptimized: true },
   basePath: process.env.PAGES_BASE_PATH,
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
