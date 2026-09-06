@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
   output: "export", // Enables static export
   basePath,
   assetPrefix: basePath,
+  env: { NEXT_PUBLIC_BASE_PATH: basePath },
   images: { unoptimized: true },
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   turbopack: {
