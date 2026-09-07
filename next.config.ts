@@ -1,52 +1,47 @@
-import createMDX from "@next/mdx";
-import type { NextConfig } from "next";
+name: Deploy to GitHub Pages
 
-const basePath = process.env.NODE_ENV === "production" ? "/Zenith-Website" : "";
+on:
+  push:
+    branches:
+      - master
 
-const nextConfig: NextConfig = {
-  output: "export", // Enables static export
-  basePath,
-  assetPrefix: basePath,
-  env: { NEXT_PUBLIC_BASE_PATH: basePath },
-  images: { unoptimized: true },
-  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
-  turbopack: {
-    rules: {
-      "*.svg": {
-        loaders: [
-          {
-            loader: "@svgr/webpack",
-            options: {
-              icon: true,
-              typescript: true,
-              svgoConfig: {
-                plugins: [
-                  {
-                    name: "removeAttrs",
-                    params: {
-                      attrs: "(class)",
-                    },
-                  },
-                ],
-              },
-            },
-          },
-        ],
-        as: "*.js",
-      },
-    },
-  },
-  devIndicators: false,
-};
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
-const withMDX = createMDX({
-  extension: /\.(md|mdx)$/,
-  options: {
-    remarkPlugins: [
-      "remark-frontmatter",
-      ["remark-mdx-frontmatter", { name: "metadata" }],
-    ],
-  },
-});
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
 
-export default withMDX(nextConfig);
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./out
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
