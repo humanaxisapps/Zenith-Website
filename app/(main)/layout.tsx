@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   /**
    * Your website URL.
    */
-  metadataBase: new URL("https://app-website-url.com"),
+  metadataBase: new URL("https://zenith.humanaxis.com/"),
 
   /**
    * Info inside `openGraph` and `twitter` is used to show rich previews
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "App title",
     description: "App description",
-    url: "https://app-website-url.com",
+    url: "https://zenith.humanaxis.com/",
     images: [
       {
         url: "/og-preview.png",
@@ -86,7 +86,7 @@ export default function RootLayout({
                 { label: "Features", href: "#features" },
                 // Uncomment the line below once you're ready to start using Release Notes
                 // { label: "Release Notes", href: "/release-notes" },
-                { label: "Contact", href: "mailto:your.email@gmail.com" },
+                { label: "Contact", href: "mailto:humanaxisapps+zenithsupport@gmail.com" },
               ]}
               action={<DownloadActionButton />}
             />
@@ -107,11 +107,7 @@ export default function RootLayout({
             }
             links={[
               { label: "Privacy", href: "/privacy" },
-              {
-                label: "Terms of Use",
-                href: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
-                external: true,
-              },
+              { label: "Terms of Use", href: "/terms" },
               {
                 label: "Follow Updates",
                 href: "https://your-social-media.com",
