@@ -79,9 +79,8 @@ export default function RootLayout({
       <body>
         <ThemeProvider>
           {!IS_WAITLIST_ENABLED && (
-            <Navbar
-              icon={<AppIcon src="/app_view/icon_placeholder.png" />}
-              appName="App Name"
+            <Navbar icon={<AppIcon src="/app_view/app-icon.png" mask={true} />}
+              appName="Zenith"
               links={[
                 { label: "Features", href: "#features" },
                 // Uncomment the line below once you're ready to start using Release Notes
@@ -101,8 +100,9 @@ export default function RootLayout({
           <CompactFooter
             appIcon={
               <AppIcon
-                src="/app_view/icon_placeholder.png"
+                src="/app_view/app-icon.png"
                 filter="grayscale"
+                mask={true}
               />
             }
             links={[

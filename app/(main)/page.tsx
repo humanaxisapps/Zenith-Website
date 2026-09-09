@@ -18,8 +18,8 @@ export default function Page() {
 
         <Section paddingTop={60}>
           <Hero
-            title="App Title"
-            subtitle="Short app description that highlights what the app does and its key value"
+            title="Zenith — Reduce Screen Time for iPhone and iPad."
+            subtitle="Stop doom scrolling. Start living."
             media={
               <Hero.Image
                 src="/app_view/screenshot_placeholder.png"
@@ -54,16 +54,16 @@ export default function Page() {
     <>
       <Section paddingTop={100}>
         <Hero
-          title="App Title"
-          subtitle="Short app description that highlights what the app does and its key value"
+          title="Stop doom scrolling. Start living."
+          subtitle="Zenith helps you take control of your day by reducing screen time."
           media={
             <Hero.Image
-              src="/app_view/screenshot_placeholder.png"
+              src="/app_view/Goals.png"
               bezel="iPhone 17 Black"
               alt=""
             />
           }
-          badges={
+          /* badges={
             <>
               <RatingLaurelsBadge
                 showStars={true}
@@ -72,23 +72,58 @@ export default function Page() {
               />
               <AppleFeatureLaurelsBadge featureName="App of the Day" />
             </>
-          }
+          } */
           action={<DownloadActionButton size="medium" />}
         />
       </Section>
 
       <Section navigationAnchor="features">
         <CardGrid rowHeight={438}>
+
           <CardGrid.StackedCard
-            maxWidth="third"
-            title="Feature Title"
-            description="Short feature description"
+            maxWidth="twoThirds"
+            title="Get time for what matters"
+            description="Zenith helps you take back control with app limits."
             media={
               <CardGrid.StackedCard.Image
-                src="/app_view/stacked_card_image_placeholder_light.png"
+                src="/app_view/Limits.png"
+                alt="Make sure to provide an image description for accessibility purposes"
+                bezel="iPhone 17 Black"
+              />
+            }
+            textAlignment="leading"
+          />
+
+          <CardGrid.StackedCard
+            maxWidth="third"
+            title="Live with intention"
+            description="Set custom limits for apps that distract you."
+            media={
+              <CardGrid.StackedCard.Image
+                src="/app_view/Limits-2.png"
                 srcset={[
                   {
-                    src: "/app_view/stacked_card_image_placeholder_dark.png",
+                    src: "/app_view/Limits-2.png",
+                    theme: "dark",
+                  },
+                ]}
+                alt="Grid"
+                bezelCrop={{ edge: "bottom", croppedRatio: 0.1 }}
+              />
+            }
+            textAlignment="leading"
+          />
+
+          <CardGrid.StackedCard
+            maxWidth="third"
+            title="Discover a new you"
+            description="Zenith helps you unlock new dimensions of yourself."
+            media={
+              <CardGrid.StackedCard.Image
+                src="/app_view/Layers.png"
+                srcset={[
+                  {
+                    src: "/app_view/Layers.png",
                     theme: "dark",
                   },
                 ]}
@@ -101,26 +136,12 @@ export default function Page() {
 
           <CardGrid.StackedCard
             maxWidth="twoThirds"
-            title="Another Feature Title"
-            description="And another feature description"
-            media={
-              <CardGrid.StackedCard.Image
-                src="/app_view/screenshot_placeholder.png"
-                alt="Make sure to provide an image description for accessibility purposes"
-                bezel="iPhone 17 Black"
-              />
-            }
-            textAlignment="leading"
-          />
-
-          <CardGrid.StackedCard
-            maxWidth="twoThirds"
-            title="Keep Titles Concise"
-            description="Use the extra space on big cards for longer descriptions"
+            title="Thrive with Zenith"
+            description="A growing library of tools and activities to help you get more out of life."
             layoutDirection="reverse"
             media={
               <CardGrid.StackedCard.Image
-                src="/app_view/screenshot_placeholder.png"
+                src="/app_view/Thrive.png"
                 alt="Make sure to provide an image description for accessibility purposes"
                 bezel="iPhone 17 Black"
                 bezelCrop={{ edge: "bottom", croppedRatio: 0.25 }}
@@ -129,7 +150,7 @@ export default function Page() {
             textAlignment="leading"
           />
 
-          <CardGrid.OverlaidCard
+          {/* <CardGrid.OverlaidCard
             maxWidth="third"
             imageSrc="/app_view/overlay_image_placeholder_light.png"
             imageSrcset={[
@@ -141,9 +162,57 @@ export default function Page() {
             title="Feature On An Overlay Card"
             description="These look great with photos or a custom graphics if you're willing to go the extra mile"
             textAlignment="center"
+          /> */}
+
+          <CardGrid.StackedCard
+            maxWidth="half"
+            title="Enjoy a growing library of inspiring wallpapers"
+            titleFontStyle="cursive"
+            description="Turn your lock screen into a daily reminder of what matters."
+            media={
+              <CardGrid.StackedCard.Image
+                src="/app_view/Wallpaper.png"
+                bezel="iPhone 17 Black"
+                bezelCrop={{ edge: "bottom", croppedRatio: 0.5 }}
+                alt=""
+              />
+            }
+            layoutDirection="reverse"
+            textAlignment="center"
           />
 
           <CardGrid.StackedCard
+            maxWidth="half"
+            title="Restore calm and focus"
+            description="A curated collection of research-backed breathing practices."
+            media={
+              <CardGrid.StackedCard.Image
+                src="/app_view/Breathing.png"
+                bezel="iPhone 17 Black"
+                bezelCrop={{ edge: "top", croppedRatio: 0.2 }}
+                alt=""
+              />
+            }
+            layoutDirection="forward"
+            textAlignment="center"
+          />
+
+          <CardGrid.OverlaidCard
+            maxWidth="full"
+            imageSrc="/app_view/Sanctuary.jpg"
+            imageSrcset={[
+              {
+                src: "/app_view/Sanctuary.jpg",
+                theme: "dark",
+              },
+            ]}
+            title="Create a Zenith you love"
+            description="From first ideas to new features, the people using Zenith help shape what we build."
+            textAlignment="center"
+            textColorTheme="dark"
+          />
+
+          {/*<CardGrid.StackedCard
             maxWidth="full"
             title="Huge Card For a Major Feature"
             description="Zoomed in UI or a custom graphic look great here"
@@ -160,44 +229,12 @@ export default function Page() {
                 bezelCrop={{ edge: "bottom", croppedRatio: 0.1 }}
               />
             }
-          />
+          />*/}
 
-          <CardGrid.StackedCard
-            maxWidth="half"
-            title="There Are Different Font Styles For Titles"
-            titleFontStyle="cursive"
-            description="When used sparingly, it adds personality and breaks the monotony"
-            media={
-              <CardGrid.StackedCard.Image
-                src="/app_view/screenshot_placeholder.png"
-                bezel="iPhone 17 Black"
-                bezelCrop={{ edge: "bottom", croppedRatio: 0.5 }}
-                alt=""
-              />
-            }
-            layoutDirection="reverse"
-            textAlignment="center"
-          />
-
-          <CardGrid.StackedCard
-            maxWidth="half"
-            title="Check AppView Docs For More Guidance"
-            description="There is a section about each card style and how to use it best"
-            media={
-              <CardGrid.StackedCard.Image
-                src="/app_view/screenshot_placeholder.png"
-                bezel="iPhone 17 Black"
-                bezelCrop={{ edge: "top", croppedRatio: 0.5 }}
-                alt=""
-              />
-            }
-            layoutDirection="forward"
-            textAlignment="center"
-          />
         </CardGrid>
       </Section>
 
-      <Section title="What people are saying" navigationAnchor="testimonials">
+      {/* <Section title="What people are saying" navigationAnchor="testimonials">
         <TestimonialsGrid maxColumnCount={2}>
           <TestimonialsGrid.Testimonial
             message="Showing social proof is very important. Show some nice words about your app from social media or App Store reviews."
@@ -228,9 +265,9 @@ export default function Page() {
             source="https://x.com/some-thread-message"
           ></TestimonialsGrid.Testimonial>
         </TestimonialsGrid>
-      </Section>
+      </Section> */}
 
-      <Section title="Additional Highlights">
+      {/* <Section title="Additional Highlights">
         <CardGrid rowHeight={280}>
           <CardGrid.IconCard
             maxWidth="third"
@@ -253,11 +290,11 @@ export default function Page() {
             description="There are sections about using icons and icon cards"
           />
         </CardGrid>
-      </Section>
+      </Section> */}
 
-      <Section paddingTop={60} paddingBottom={160}>
+      <Section paddingTop={0} paddingBottom={100}>
         <DownloadActionButton
-          size="medium"
+          size="large"
         />
       </Section>
     </>
