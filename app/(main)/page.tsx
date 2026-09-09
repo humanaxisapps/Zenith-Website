@@ -116,14 +116,14 @@ export default function Page() {
 
           <CardGrid.StackedCard
             maxWidth="third"
-            title="Discover a new you"
-            description="Zenith helps you unlock new dimensions of yourself."
+            title="Focus on what matters"
+            description="Use the Pomodoro timer for deep work toward your goals."
             media={
               <CardGrid.StackedCard.Image
-                src="/app_view/Layers.png"
+                src="/app_view/Focus.png"
                 srcset={[
                   {
-                    src: "/app_view/Layers.png",
+                    src: "/app_view/Focus.png",
                     theme: "dark",
                   },
                 ]}
@@ -137,7 +137,7 @@ export default function Page() {
           <CardGrid.StackedCard
             maxWidth="twoThirds"
             title="Thrive with Zenith"
-            description="A growing library of tools and activities to help you get more out of life."
+            description="A growing library of tools and activities to support you in getting more out of life."
             layoutDirection="reverse"
             media={
               <CardGrid.StackedCard.Image
@@ -234,6 +234,12 @@ export default function Page() {
         </CardGrid>
       </Section>
 
+      <Section paddingTop={0} paddingBottom={0}>
+        <DownloadActionButton
+          size="large"
+        />
+      </Section>
+
       {/* <Section title="What people are saying" navigationAnchor="testimonials">
         <TestimonialsGrid maxColumnCount={2}>
           <TestimonialsGrid.Testimonial
@@ -267,30 +273,53 @@ export default function Page() {
         </TestimonialsGrid>
       </Section> */}
 
-      {/* <Section title="Additional Highlights">
+      <Section title="How Zenith helps you take control">
         <CardGrid rowHeight={280}>
           <CardGrid.IconCard
             maxWidth="third"
-            iconName="check_circle"
-            title="Icon Card"
-            description="These are great for listing highlights that don't need images"
+            iconName="target"
+            title="Create Goals"
+            description="Track the goals that matter most to you and block out the noise."
           />
 
           <CardGrid.IconCard
             maxWidth="third"
             iconName="lock"
-            title="There Are A Ton Of Icons"
-            description="AppView uses Material Symbols for icons with a huge collection to choose from"
+            title="Strict Limits"
+            description="Set strict or time-based limits for your most distracting apps."
           />
 
           <CardGrid.IconCard
             maxWidth="third"
-            iconName="star"
-            title="Check AppView Docs"
-            description="There are sections about using icons and icon cards"
+            iconName="timer"
+            title="Pomodoro Timer"
+            description="Use a research-backed focus technique to get into deep work."
           />
         </CardGrid>
-      </Section> */}
+
+        <CardGrid rowHeight={280}>
+          <CardGrid.IconCard
+            maxWidth="third"
+            iconName="air"
+            title="Breathing Practice"
+            description="Explore breathwork exercises to regain your calm, clarity and focus."
+          />
+
+          <CardGrid.IconCard
+            maxWidth="third"
+            iconName="wallpaper"
+            title="Motivational Wallpapers"
+            description="Choose from handcrafted wallpapers by artists from around the world."
+          />
+
+          <CardGrid.IconCard
+            maxWidth="third"
+            iconName="chat_bubble"
+            title="Have your say"
+            description="We keep improving Zenith based on feedback from the people who use it."
+          />
+        </CardGrid>
+      </Section>
 
       <Section paddingTop={0} paddingBottom={100}>
         <DownloadActionButton

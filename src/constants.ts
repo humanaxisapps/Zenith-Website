@@ -29,13 +29,16 @@ export const MATERIAL_SYMBOLS = [
   "send",
   "check_circle",
   "star",
-  "mail",
+  "air",
   "open_in_new",
   "open_in_full",
   "play_arrow",
   "pause",
   "lock",
   "target",
+  "timer",
+  "wallpaper",
+  "chat_bubble",
 ] as const;
 
 // Neutral
