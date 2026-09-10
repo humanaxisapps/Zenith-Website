@@ -16,8 +16,8 @@ export const metadata: Metadata = {
    * Recommended length for title is max 60 characters.
    * Recommended length for description is max 160 characters.
    */
-  title: "Zenith — Reduce Screen Time for iPhone and iPad.",
-  description: "Zenith helps you reduce screen time, stop doom scrolling and start living.",
+  title: "Zenith helps you reduce screen time for iPhone and iPad.",
+  description: "Stop doom scrolling, take back your focus, and achieve your goals.",
 
   /**
    * Your website URL.
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
    * run the dev server and go to `http://localhost:3000/open-graph-builder`.
    */
   openGraph: {
-    title: "App title",
-    description: "App description",
+    title: "Zenith helps you reduce screen time for iPhone and iPad.",
+    description: "Stop doom scrolling, take back your focus, and achieve your goals.",
     url: "https://zenith.humanaxis.com/",
     images: [
       {
@@ -47,8 +47,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App title",
-    description: "App description",
+    title: "Zenith helps you reduce screen time for iPhone and iPad.",
+    description: "Stop doom scrolling, take back your focus, and achieve your goals.",
     images: ["/og-preview.png"],
   },
 };

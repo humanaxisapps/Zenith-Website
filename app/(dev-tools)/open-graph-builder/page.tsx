@@ -15,12 +15,12 @@ export default function OpenGraphBuilderPage() {
 					* Adjust the screenshot crop if needed
 				*/}
         <OpenGraphPreview
-          title="App Title"
-          iconSrc="/app_view/icon_placeholder.png"
-          screenshotSrc="/app_view/screenshot_placeholder.png"
+          title="Zenith - Build your best life"
+          iconSrc="/app_view/app-icon-rounded.png"
+          screenshotSrc="/app_view/Goals.png"
           bezel="iPhone 17 Black"
           bezelCrop={{ edge: "bottom", croppedRatio: 0.35 }}
-          theme="light"
+          theme="dark"
         />
       </div>
 
