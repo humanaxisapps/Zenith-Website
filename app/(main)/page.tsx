@@ -54,8 +54,8 @@ export default function Page() {
     <>
       <Section paddingTop={100}>
         <Hero
-          title="Stop doom scrolling. Start living."
-          subtitle="Zenith helps you take control of your day by reducing screen time."
+          title="Stop doomscrolling. Start living."
+          subtitle="Zenith helps you take control of your day. Reduce screen time, focus, and make time for what matters."
           media={
             <Hero.Image
               src="/app_view/Goals.png"
@@ -82,7 +82,7 @@ export default function Page() {
 
           <CardGrid.StackedCard
             maxWidth="twoThirds"
-            title="Get time for what matters"
+            title="Make time for what matters"
             description="Zenith helps you take back control with app limits."
             media={
               <CardGrid.StackedCard.Image
@@ -168,7 +168,7 @@ export default function Page() {
             maxWidth="half"
             title="Enjoy a growing library of inspiring wallpapers"
             titleFontStyle="cursive"
-            description="Turn your lock screen into a daily reminder of what matters."
+            description="Turn your lock screen into a daily reminder to focus on the important things."
             media={
               <CardGrid.StackedCard.Image
                 src="/app_view/Wallpaper.png"
@@ -206,8 +206,8 @@ export default function Page() {
                 theme: "dark",
               },
             ]}
-            title="Create a Zenith you love"
-            description="From first ideas to new features, the people using Zenith help shape what we build."
+            title="Have your say on what we build"
+            description="From first ideas to new features, the people using Zenith help shape it into a space for growth."
             textAlignment="center"
             textColorTheme="dark"
           />
@@ -285,7 +285,7 @@ export default function Page() {
           <CardGrid.IconCard
             maxWidth="third"
             iconName="lock"
-            title="Strict Limits"
+            title="Personalized App Blocker"
             description="Set strict or time-based limits for your most distracting apps."
           />
 

@@ -108,10 +108,11 @@ export default function RootLayout({
             links={[
               { label: "Privacy", href: "/privacy" },
               { label: "Terms of Use", href: "/terms" },
-              {
+              { label: "Release Notes", href: "/release-notes" },
+              /*{
                 label: "Follow Updates",
                 href: "https://your-social-media.com",
-              },
+              },*/
             ]}
             footnoteLeading={`© ${new Date().getFullYear()}. All rights reserved.`}
             footnoteTrailing={
