@@ -32,6 +32,9 @@
       ],
       "@/content/*": [
         "./app/(main)/release-notes/content/*"
+      ],
+      "@/blog-content/*": [
+        "./app/(main)/blog/content/*"
       ]
     }
   },

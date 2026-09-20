@@ -19,7 +19,7 @@ export default function Page() {
         <Section paddingTop={60}>
           <Hero
             title="Zenith — Reduce Screen Time for iPhone and iPad."
-            subtitle="Stop doom scrolling. Start living."
+            subtitle="Stop doomscrolling. Start living."
             media={
               <Hero.Image
                 src="/app_view/screenshot_placeholder.png"
@@ -82,8 +82,8 @@ export default function Page() {
 
           <CardGrid.StackedCard
             maxWidth="twoThirds"
-            title="Make time for what matters"
-            description="Zenith helps you take back control with app limits."
+            title="Reclaim time for what matters"
+            description="Zenith helps you take back control of your time and attention."
             media={
               <CardGrid.StackedCard.Image
                 src="/app_view/Limits.png"
@@ -96,7 +96,7 @@ export default function Page() {
 
           <CardGrid.StackedCard
             maxWidth="third"
-            title="Live with intention"
+            title="Protect your time"
             description="Set custom limits for apps that distract you."
             media={
               <CardGrid.StackedCard.Image
@@ -116,7 +116,7 @@ export default function Page() {
 
           <CardGrid.StackedCard
             maxWidth="third"
-            title="Focus on what matters"
+            title="Strong focus that helps you win"
             description="Use the Pomodoro timer for deep work toward your goals."
             media={
               <CardGrid.StackedCard.Image
@@ -136,8 +136,8 @@ export default function Page() {
 
           <CardGrid.StackedCard
             maxWidth="twoThirds"
-            title="Thrive with Zenith"
-            description="A growing library of tools and activities to support you in getting more out of life."
+            title="Build good habits that last"
+            description="A growing library of tools and activities to help you thrive."
             layoutDirection="reverse"
             media={
               <CardGrid.StackedCard.Image
@@ -166,9 +166,9 @@ export default function Page() {
 
           <CardGrid.StackedCard
             maxWidth="half"
-            title="Enjoy a growing library of inspiring wallpapers"
+            title="Enjoy a growing library of exclusive wallpapers"
             titleFontStyle="cursive"
-            description="Turn your lock screen into a daily reminder to focus on the important things."
+            description="Turn your lock screen into a daily reminder of what inspires."
             media={
               <CardGrid.StackedCard.Image
                 src="/app_view/Wallpaper.png"

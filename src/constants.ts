@@ -81,4 +81,6 @@ export const COLORS: ColorScheme = {
 
 export const MAX_RELEASE_NOTES_PER_PAGE = 5;
 
+export const MAX_BLOG_POSTS_PER_PAGE = 6;
+
 export const IS_WAITLIST_ENABLED = false;
