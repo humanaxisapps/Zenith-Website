@@ -1,0 +1,45 @@
+.blogPost {
+  margin-top: 60px;
+
+  .backLink {
+    display: inline-block;
+    color: var(--color-text-secondary);
+    font-size: 15px;
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+
+  .backLink:hover {
+    opacity: 0.6;
+  }
+
+  .hero {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: var(--color-fill-2);
+    margin-bottom: 24px;
+
+    /* Overrides the inline-markdown `img` styling from Article, which
+       would otherwise add margin/height:auto to this fill image and
+       shrink it away from the edges of its container. */
+    img {
+      margin: 0;
+      height: 100%;
+      border-radius: 0;
+    }
+  }
+
+  .publishDate {
+    color: var(--color-text-secondary);
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .title {
+    margin-top: 0;
+  }
+}

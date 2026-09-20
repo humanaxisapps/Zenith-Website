@@ -17,7 +17,7 @@ export const metadata: Metadata = {
    * Recommended length for description is max 160 characters.
    */
   title: "Zenith helps you reduce screen time for iPhone and iPad.",
-  description: "Stop doom scrolling, take back your focus, and achieve your goals.",
+  description: "Stop doom scrolling, take back your focus, and achieve your goals. Zenith helps you reduce screen time, build better habits, and make time for what matters.",
 
   /**
    * Your website URL.
@@ -32,14 +32,15 @@ export const metadata: Metadata = {
    * run the dev server and go to `http://localhost:3000/open-graph-builder`.
    */
   openGraph: {
+    siteName: "Zenith",
     title: "Zenith helps you reduce screen time for iPhone and iPad.",
-    description: "Stop doom scrolling, take back your focus, and achieve your goals.",
+    description: "Stop doom scrolling, take back your focus, and achieve your goals. Zenith helps you reduce screen time, build better habits, and make time for what matters.",
     url: "https://zenith.humanaxis.com/",
     images: [
       {
         url: "/og-preview.png",
         width: 1200,
-        height: 720,
+        height: 630,
         alt: "",
       },
     ],
@@ -48,7 +49,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Zenith helps you reduce screen time for iPhone and iPad.",
-    description: "Stop doom scrolling, take back your focus, and achieve your goals.",
+    description: "Stop doom scrolling, take back your focus, and achieve your goals. Zenith helps you reduce screen time, build better habits, and make time for what matters.",
     images: ["/og-preview.png"],
   },
 };
@@ -85,6 +86,8 @@ export default function RootLayout({
                 { label: "Features", href: "#features" },
                 // Uncomment the line below once you're ready to start using Release Notes
                 // { label: "Release Notes", href: "/release-notes" },
+                // Uncomment the line below once you're ready to start using the Blog
+                // { label: "Blog", href: "/blog" },
                 { label: "Contact", href: "mailto:humanaxisapps+zenithsupport@gmail.com" },
               ]}
               action={<DownloadActionButton />}
@@ -109,6 +112,8 @@ export default function RootLayout({
               { label: "Privacy", href: "/privacy" },
               { label: "Terms of Use", href: "/terms" },
               { label: "Release Notes", href: "/release-notes" },
+              { label: "Contact", href: "mailto:humanaxisapps+zenithsupport@gmail.com" },
+              /*{ label: "Blog", href: "/blog" },*/
               /*{
                 label: "Follow Updates",
                 href: "https://your-social-media.com",

@@ -1,0 +1,16 @@
+.blogGrid {
+  width: 100%;
+  max-width: var(--base-width);
+  padding: 0 30px;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px 24px;
+}
+
+@container root (width < 700px) {
+  .blogGrid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
